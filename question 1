@@ -1,0 +1,22 @@
+
+class Twosum():
+
+    def __init__(self,list1,target):
+        self.list1=list1
+        self.target=target
+
+    def Solution(self):
+        dict={}
+        length=len(list1)
+        for i in range(length):
+            j=target-list1[i]
+            if j in dict:
+                return dict[j],i
+            else:
+                dict[list1[i]]=i
+
+list1=[2,7,11,15]
+target=13
+Wong=Twosum(list1,target)
+print(Wong.Solution())
+
