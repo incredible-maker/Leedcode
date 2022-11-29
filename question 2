@@ -1,0 +1,18 @@
+
+
+class Question2:
+    def __init__(self,list1,list2):
+        self.list1=list1
+        self.list2=list2
+
+    def Solution(self):
+        result=[sum(i)for i in zip(list1,list2)]
+        result3=list(reversed(result))
+        return result3
+
+
+
+list1=[11,2,5,11]
+list2=[2,34,25,4]
+Try=Question2(list1,list2)
+print(Try.Solution())
