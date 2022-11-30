@@ -1,0 +1,12 @@
+class Solution:
+
+    def __init__(self,x):
+        self.x=x
+    def isPalidrome(self):
+        if str(self.x)==str(self.x)[::-1]:
+            return self.x
+        else:
+            return -1
+
+
+    
